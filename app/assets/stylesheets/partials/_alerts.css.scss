@@ -1,0 +1,10 @@
+.alert{
+  font-family: $font-familty-secondary;
+  position: fixed;
+  top: 60px;
+  right: 10px;
+  float: right;
+  width: 500px;
+  z-index: 10000;
+	@include box_shadow($dark-grey, 0, 1px, 1px, 0px);
+}

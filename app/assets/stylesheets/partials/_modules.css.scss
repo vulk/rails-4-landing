@@ -1,0 +1,11 @@
+.m-default{}
+.m-white{ background: white; }
+.m-light-grey{ background: $light-grey; }
+.m-dark-grey{ background: $dark-grey; }
+.m-blank-slate{ border: 2px dashed $grey; }
+
+.m-form{
+  padding: 30px;
+  border: 1px solid $grey;
+  @include border_radius(10px,10px,10px,10px);
+}

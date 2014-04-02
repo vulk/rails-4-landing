@@ -1,0 +1,57 @@
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=number],
+input[type=date],
+input[type=select],
+textarea{
+	border: 1px solid $grey !important;
+	padding: 11px 10px;
+	font-size: 14pt;
+	color: $black;
+	margin: 0 !important;
+	width: 100%;
+	@include border_radius(5px,5px,5px,5px);
+	&:focus{
+		border: 1px solid lighten($blue, 25%) !important;
+		-webkit-box-shadow: 0px 0px 4px lighten($blue, 25%) !important;
+       -moz-box-shadow: 0px 0px 4px lighten($blue, 25%) !important;
+            box-shadow: 0px 0px 4px lighten($blue, 25%) !important;
+	}
+}
+
+label{
+	font-size: 14pt;
+}
+
+// Placeholders
+::-webkit-input-placeholder {
+   color: $dark-grey;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: $dark-grey;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $dark-grey;
+}
+:-ms-input-placeholder {
+   color: $dark-grey;
+}
+
+// ==========
+// = Errors =
+// ==========
+.errors{
+  h4{ font-weight: 600; }
+  .alert{
+  	margin: 10px;
+  	@include border_radius(5px,5px,5px,5px);
+  }
+  .alert-error{
+  	background: $red;
+  	color: $black;
+  }
+}
+.field-with-error{
+  input{ border: 1px solid $red !important; }
+}
