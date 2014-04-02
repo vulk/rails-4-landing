@@ -55,4 +55,4 @@ heroku ps:scale web=1
 heroku config:set SECRET_TOKEN=`rake secret`
 ```
 
-Your app should be know be live at ```yourappname.herokuapp.com```. You can open it from the command line with ```heroku open```.
+Your app should now be live at ```yourappname.herokuapp.com```. You can open it from the command line with ```heroku open```.
